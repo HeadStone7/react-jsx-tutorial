@@ -18,12 +18,13 @@ const emojis = [
 ];
 
 function App() {
-    const greeting = "greeting"
+    const greeting = "greeting" //this var is used dynamically as an id
     const displayAction = true
+
   return (
       <div className="container">
           <h1 id={greeting}>Hello, World</h1>
-          {displayAction && <p>I am writing JSX</p>}
+          {displayAction && <p>I am writing JSX</p>} {/*displayAction = true the <p> shows off*/}
           <ul>
               {
                   emojis.map(emoji =>
